@@ -1,0 +1,44 @@
+generated: '2026-07-20'
+method: searched
+source: live HTTP probes of odeko.com/.well-known/* + /llms.txt
+note: >-
+  odeko.com is a Shopify-hosted storefront (underlying store
+  lpelletier-b620.myshopify.com). The well-known documents below are
+  provisioned by the Shopify platform on Odeko's domain, not authored by
+  Odeko. Captured verbatim as genuine domain artifacts.
+host: odeko.com
+entries:
+- path: /.well-known/openid-configuration
+  status: 200
+  file: odeko-openid-configuration.json
+  type: WellKnown
+  provider: Shopify (Customer Accounts OIDC)
+  issuer: https://shopify.com/authentication/56137351242
+- path: /.well-known/oauth-authorization-server
+  status: 200
+  file: odeko-oauth-authorization-server.json
+  type: WellKnown
+  provider: Shopify (Customer Accounts OAuth AS)
+  issuer: https://shopify.com/authentication/56137351242
+- path: /.well-known/ucp
+  status: 200
+  file: odeko-ucp.json
+  type: WellKnown
+  provider: Shopify (Universal Commerce Protocol merchant profile)
+  ucp_version: '2026-04-08'
+  mcp_endpoint: https://lpelletier-b620.myshopify.com/api/ucp/mcp
+- path: /llms.txt
+  status: 200
+  file: ../llms/odeko-llms.txt
+  type: LLMsTxt
+  provider: Shopify (agent instructions / Shop skill + UCP)
+- path: /.well-known/security.txt
+  status: 404
+  file: null
+  type: SecurityTxt
+- path: /.well-known/api-catalog
+  status: 404
+  file: null
+- path: /.well-known/ai-plugin.json
+  status: 404
+  file: null

@@ -1,8 +1,26 @@
 aid: odeko
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/odeko.png
 name: Odeko
-description: 'Odeko is a company surfaced as a portfolio company of ggv-capital, y-combinator and added
-  to the API Evangelist network as a stub for enrichment. Sector: food. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: >-
+  Odeko is a cafe operations platform that keeps independent coffee shops and
+  cafes stocked by combining predictive ordering, overnight supply delivery,
+  and mobile ordering plus rewards management through a single dashboard. It
+  was surfaced as a portfolio company of GGV Capital and Y Combinator and added
+  to the API Evangelist network. Odeko publishes no first-party developer API;
+  its public odeko.com storefront runs on Shopify, which provisions
+  agentic-commerce surfaces (llms.txt, UCP profile, and a UCP shopping MCP
+  endpoint) on the domain. This profile captures those real domain artifacts.
 url: https://raw.githubusercontent.com/api-evangelist/odeko/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,10 +31,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Food
+- Cafe
+- Coffee
+- Supply Chain
+- Logistics
+- Commerce
+- Shopify
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -26,3 +50,28 @@ maintainers:
 common:
 - type: Website
   url: https://odeko.com/
+- type: Login
+  url: https://portal.odeko.com/signin
+- type: HelpCenter
+  url: https://helpcenter.odeko.com/knowledge
+- type: Blog
+  url: https://odeko.com/blogs/resources
+- type: Support
+  url: https://odeko.com/pages/contact-us
+- type: PrivacyPolicy
+  url: https://odeko.com/pages/privacy-policy
+- type: TermsOfService
+  url: https://odeko.com/pages/terms-of-use
+- type: WellKnown
+  url: well-known/odeko-well-known.yml
+- type: LLMsTxt
+  url: llms/odeko-llms.txt
+- type: MCPServer
+  url: mcp/odeko-mcp.yml
+- type: DomainSecurity
+  url: security/odeko-domain-security.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 7
+  pass: local-v1
