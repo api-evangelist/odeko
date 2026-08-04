@@ -1,7 +1,8 @@
 generated: '2026-07-20'
 method: searched
 source: https://odeko.com/.well-known/ucp (live probe, HTTP 200)
-status: live
+status: published
+status_raw: live
 note: >-
   Not an Odeko-authored MCP server. odeko.com is a Shopify-hosted storefront;
   Shopify auto-provisions a Universal Commerce Protocol (UCP) shopping MCP
