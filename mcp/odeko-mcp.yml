@@ -3,11 +3,9 @@ method: searched
 source: https://odeko.com/.well-known/ucp (live probe, HTTP 200)
 status: published
 status_raw: live
-note: >-
-  Not an Odeko-authored MCP server. odeko.com is a Shopify-hosted storefront;
-  Shopify auto-provisions a Universal Commerce Protocol (UCP) shopping MCP
-  endpoint for agentic commerce over the store's product catalog and checkout.
-  Discovered via the store's UCP merchant profile and captured honestly.
+note: Not an Odeko-authored MCP server. odeko.com is a Shopify-hosted storefront; Shopify auto-provisions
+  a Universal Commerce Protocol (UCP) shopping MCP endpoint for agentic commerce over the store's product
+  catalog and checkout. Discovered via the store's UCP merchant profile and captured honestly.
 server:
   name: Odeko Store (Shopify UCP Shopping)
   protocol: Universal Commerce Protocol (UCP)
@@ -33,3 +31,11 @@ capabilities:
 related:
   shop_skill: https://shop.app/SKILL.md
   ucp_home: https://ucp.dev
+deployment:
+  mode: remote
+  endpoint: https://lpelletier-b620.myshopify.com/api/ucp/mcp
+  verified: probed
+  probe: live
+  tools: 13
+  checked: '2026-08-12'
+  source: catalog MCP census
